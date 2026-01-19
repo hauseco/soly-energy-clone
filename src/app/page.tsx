@@ -298,7 +298,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Soly Brain Section */}
+      {/* Soly Brain Section - Mit zentralem Bild und schwebenden Karten */}
       <section id="energiemanagement" className="py-16 md:py-24">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
@@ -308,40 +308,50 @@ export default function HomePage() {
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            <Card className="overflow-hidden group hover:shadow-xl transition-shadow relative">
-              <div className="relative h-80">
-                <Image
-                  src="https://ext.same-assets.com/3884434641/2632997650.webp"
-                  alt="Soly Brain"
-                  fill
-                  className="object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                  <h3 className="text-xl font-bold mb-2">Verbinden Sie Ihre Geräte</h3>
-                  <p className="text-white/80 mb-4">und überwachen Sie diese in der Soly App.</p>
-                  <Link href="/produkte/soly-brain" className="inline-flex items-center bg-white text-gray-900 px-4 py-2 rounded-full font-semibold hover:bg-yellow-400 transition-colors">
-                    <ArrowRight className="w-4 h-4 mr-2" /> Mehr erfahren
-                  </Link>
-                </div>
-              </div>
-            </Card>
+          {/* Zentrales Bild mit schwebenden Karten */}
+          <div className="relative max-w-4xl mx-auto">
+            {/* Zentrales Bild */}
+            <div className="relative h-[500px] md:h-[600px] rounded-2xl overflow-hidden">
+              <Image
+                src="https://ext.same-assets.com/3884434641/3590352420.webp"
+                alt="Soly Brain Gerät"
+                fill
+                className="object-cover"
+              />
+            </div>
 
-            <Card className="overflow-hidden group hover:shadow-xl transition-shadow relative">
-              <div className="relative h-80">
-                <Image
-                  src="https://ext.same-assets.com/3884434641/3778532590.webp"
-                  alt="Ersparnisse"
-                  fill
-                  className="object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                  <h3 className="text-xl font-bold mb-2">Steigern Sie Ihre Ersparnisse</h3>
-                  <p className="text-white/80">Ein revolutionäres Betriebssystem, das Ihre PV-Anlage, Ladestation und Stromspeicher optimal steuert – für maximale Erträge.</p>
-                </div>
-              </div>
+            {/* Schwebende Karte links unten */}
+            <div className="absolute bottom-8 left-4 md:left-8 max-w-xs">
+              <Card className="bg-white/95 backdrop-blur-sm shadow-xl p-6">
+                <h3 className="text-lg font-bold text-gray-900 mb-2">Verbinden Sie Ihre Geräte</h3>
+                <p className="text-gray-600 text-sm mb-4">und überwachen Sie diese in der Soly App.</p>
+                <Link
+                  href="/produkte/soly-brain"
+                  className="inline-flex items-center bg-gray-900 text-white px-4 py-2 rounded-full font-semibold text-sm hover:bg-gray-800 transition-colors"
+                >
+                  Mehr erfahren
+                </Link>
+              </Card>
+            </div>
+
+            {/* Schwebende Karte rechts oben */}
+            <div className="absolute top-8 right-4 md:right-8 max-w-xs hidden md:block">
+              <Card className="bg-white/95 backdrop-blur-sm shadow-xl p-6">
+                <h3 className="text-lg font-bold text-gray-900 mb-2">Steigern Sie Ihre Ersparnisse</h3>
+                <p className="text-gray-600 text-sm">
+                  Ein revolutionäres Betriebssystem, das Ihre PV-Anlage, Ladestation und Stromspeicher optimal steuert – für maximale Erträge.
+                </p>
+              </Card>
+            </div>
+          </div>
+
+          {/* Mobile: Zweite Karte unter dem Bild */}
+          <div className="md:hidden mt-6 max-w-xs mx-auto">
+            <Card className="bg-white shadow-lg p-6">
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Steigern Sie Ihre Ersparnisse</h3>
+              <p className="text-gray-600 text-sm">
+                Ein revolutionäres Betriebssystem, das Ihre PV-Anlage, Ladestation und Stromspeicher optimal steuert – für maximale Erträge.
+              </p>
             </Card>
           </div>
         </div>
