@@ -45,7 +45,6 @@
   .section-label {
     @apply text-xs font-semibold uppercase tracking-[0.2em] text-yellow-500;
   }
-
   .section-title {
     @apply text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight;
   }
