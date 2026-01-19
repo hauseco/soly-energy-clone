@@ -1,7 +1,6 @@
 # Soly Energy Clone - TODO Tracker
 
 ## Seiten
-
 - [x] Homepage (/) - mit allen Segmenten
 - [x] PV-Anlage (/produkte/pv-anlage)
 - [x] Stromspeicher (/produkte/stromspeicher-kaufen)
@@ -11,7 +10,6 @@
 - [ ] Über Soly (/uber-soly) - Platzhalter vorhanden
 
 ## Komponenten
-
 - [x] Header/Navigation
 - [x] Footer mit B Corp Badge
 - [x] Hero Section mit korrektem Bild
@@ -26,13 +24,11 @@
 - [x] CTA Konfigurator
 
 ## GitHub
-
 - [x] Repository erstellen (https://github.com/hauseco/soly-energy-clone)
 - [x] Code pushen
 - [x] Fehlende Segmente Update gepusht
 
 ## Noch offen
-
 - [ ] Kontakt-Seite vollständig ausbauen
 - [ ] Über Soly-Seite vollständig ausbauen
-- [ ] Header-Logo korrigieren (doppelt angezeigt)
+- [x] Header-Logo korrigieren (doppelt angezeigt) ✅
