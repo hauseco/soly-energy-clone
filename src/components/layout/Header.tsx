@@ -32,13 +32,7 @@ export function Header() {
           <div className="flex items-center justify-between h-16 md:h-20">
             {/* Logo */}
             <Link href="/" className="flex items-center">
-              <svg viewBox="0 0 120 32" className="h-8 w-auto" fill="none">
-                <text x="0" y="24" className="font-bold text-2xl" fill="#1A1A1A">S</text>
-                <circle cx="28" cy="16" r="10" fill="#FFD700" />
-                <text x="45" y="24" className="font-bold text-2xl" fill="#1A1A1A">L</text>
-                <text x="65" y="24" className="font-bold text-2xl" fill="#1A1A1A">Y</text>
-              </svg>
-              <span className="text-2xl font-bold tracking-tight ml-1">
+              <span className="text-2xl font-bold tracking-tight">
                 <span className="text-[#1A1A1A]">S</span>
                 <span className="inline-block w-5 h-5 bg-yellow-400 rounded-full mx-0.5 relative -top-0.5" />
                 <span className="text-[#1A1A1A]">LY</span>
